@@ -87,7 +87,7 @@ const TopPlay = () => {
         </div>
 
         <div className="mt-4 flex flex-col gap-1">
-          {topPlay?.map((song, index) => (
+          {topPlay?.map((song, index) => song?.hub?.actions?.length &&song?.images?.coverart ?(
             <TopChartCard
               key={song?.key}
               song={song}
@@ -97,7 +97,7 @@ const TopPlay = () => {
               handlePauseClick={handlePauseClick}
               handlePlayClick={()=>handlePlayClick(song,index)}
             />
-          ))}
+          ):"")}
         </div>
       </div>
 
