@@ -7,8 +7,7 @@ export const shazamCoreApi = createApi({
     prepareHeaders: (headers) => {
       headers.set(
         "X-RapidAPI-Key",
-        // "c3077007f8mshd68ba080623a402p12ccc2jsn0da79bb637f9" //kamal3354k.gmail.com
-        "fbaba59bccmshd6712e9b06202c7p12049cjsn46492853cb03" //kamal.rathore.speckyfox.com
+        "c3077007f8mshd68ba080623a402p12ccc2jsn0da79bb637f9" //kamal3354k.gmail.com
       );
       return headers;
     },
@@ -45,3 +44,5 @@ export const {
   useGetSongByGenreQuery,
   useGetSongBySearchQuery
 } = shazamCoreApi;
+
+// https://rapidapi.com/tipsters/api/shazam-core/
